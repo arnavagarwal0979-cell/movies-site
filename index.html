@@ -2,35 +2,88 @@
 <html>
 
 <head>
-<title></title>
+<title>VISION PLAY</title>
 
 <style>
 
 body{
-background:black;
+margin:0;
+background:#141414;
 color:white;
 font-family:Arial;
 }
 
+/* Navbar */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:black;
+position:sticky;
+top:0;
+}
+
 .logo{
-font-size:30px;
-color:red;
+color:#e50914;
+font-size:28px;
+font-weight:bold;
+}
+
+.menu a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-size:16px;
+}
+
+.menu a:hover{
+color:#e50914;
+}
+
+/* Banner */
+
+.banner{
+height:400px;
+background:url("banner.jpg") center/cover;
+display:flex;
+align-items:flex-end;
+padding:40px;
+}
+
+.banner h1{
+font-size:50px;
+}
+
+/* Movie rows */
+
+.row{
 padding:20px;
 }
 
-.row{
+.row h2{
+margin-left:10px;
+}
+
+.posters{
 display:flex;
 overflow-x:auto;
 }
 
+.posters::-webkit-scrollbar{
+display:none;
+}
+
 .poster{
-width:150px;
+width:170px;
 margin:10px;
+border-radius:5px;
 transition:0.3s;
 }
 
 .poster:hover{
-transform:scale(1.2);
+transform:scale(1.15);
 }
 
 </style>
@@ -39,24 +92,50 @@ transform:scale(1.2);
 
 <body>
 
-<div class="logo">VISON PLAY</div>
+<div class="navbar">
+
+<div class="logo">VISION PLAY</div>
+
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">Movies</a>
+<a href="#">Series</a>
+<a href="#">My List</a>
+</div>
+
+</div>
+
+<div class="banner">
+<h1>Trending Now</h1>
+</div>
+
+<div class="row">
 
 <h2>Trending Movies</h2>
 
-<div class="row">
+<div class="posters">
 
 <img class="poster" src="poster1.jpg">
 <img class="poster" src="poster2.jpg">
 <img class="poster" src="poster3.jpg">
+<img class="poster" src="poster4.jpg">
+<img class="poster" src="poster5.jpg">
 
 </div>
 
-<h2>Hollywood Movies</h2>
+</div>
 
 <div class="row">
 
-<img class="poster" src="poster4.jpg">
-<img class="poster" src="poster5.jpg">
+<h2>Hollywood Movies</h2>
+
+<div class="posters">
+
+<img class="poster" src="poster6.jpg">
+<img class="poster" src="poster7.jpg">
+<img class="poster" src="poster8.jpg">
+
+</div>
 
 </div>
 
